@@ -38,6 +38,9 @@ public:
     Vec2 operator-(const Vec2& RightHandSide) const {
         return { x - RightHandSide.x, y - RightHandSide.y };
     }
+    Vec2 operator-(const int RightHandSide) const {
+        return { x - RightHandSide, y - RightHandSide };
+    }
     Vec2& operator-=(const Vec2& RightHandSide) {
         x -= RightHandSide.x;
         y -= RightHandSide.y;

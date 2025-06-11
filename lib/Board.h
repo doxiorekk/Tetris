@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "raylib.h"
+#include "RaylibWrapper.h"
 #include "Vec2.h"
 
 class Board {

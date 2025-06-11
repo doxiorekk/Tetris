@@ -41,7 +41,7 @@ void Board::DrawCell(Vec2<int> pos) const {
     assert(pos.GetX() >= 0 && pos.GetY() >= 0 && pos.GetX() < width && pos.GetY() < height); // Triggered assertion means x or y is out of bounds
     Color color = cells[pos.GetY() * width + pos.GetX()].GetColor();
     Vec2<int> topLeft = screenPos + padding + (pos * cellSize);
-    DrawRectangle(topLeft.GetX(), topLeft.GetY(), cellSize - padding, cellSize - padding, color);
+    raylibwrap::DrawRectangle(topLeft, Vec2<int> {cellSize - padding, cellSize - padding}, color);
 }
 
 void Board::Draw() const {
