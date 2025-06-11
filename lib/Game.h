@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Board.h"
 
 class Game {
 public:
@@ -14,4 +15,6 @@ public:
 private:
     void Draw();
     void Update();
+
+    Board board;
 };
